@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1{
+  font-family: "Noto Serif", serif ;
+  font-style: normal;
+  font-size: 3em;
+}
+
+p {
+  font-family:'Times New Roman', Times, serif;
+}
+
+.topnav {
+  background-color: rgba(54, 175, 17, 0.875);
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover{
+  background-color: #04bc60;
+  color: antiquewhite;
+}
