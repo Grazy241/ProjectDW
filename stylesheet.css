@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-body{
+/*Achtergrond Bovenkant pagina*/
+/*
+#topTitle{
   background-image: url(../ProjectDW/images/bxMaBelle.jpg);
-  background-color: #04bc60;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-repeat: no-repeat;
 }
-
+*/
+/*header*/
+header{
+  
+}
 #filters {
   margin-top: 1rem;
   display: flex;
@@ -20,6 +22,35 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+h2{
+  text-align: center;
+  color: rgb(5, 76, 5);
+  font-size: 2em;
+}
+h3{
+  text-align: center;
+  color: darkgreen;
+  font-size: 2em;
+}
+#themaswitch{
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+
+
+/*body*/
+body{
+  background-color: #04bc60;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body.dark{
+  background-color: #335;
+}
+
 input {
   padding: 0.6rem 1rem;
   font-size: 1rem;
@@ -40,6 +71,19 @@ button{
 button:hover{
   background-color: rgb(98, 197, 151);
 }
+#sortBtn{
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.favBtn{
+  background-color: fuchsia;
+  padding: 0.13rem 0.25rem;
+}
+.favBtn:hover{
+  background-color: rgb(237, 151, 165);
+}
 section{
   background-color: #61e357;
   padding: 1rem;
@@ -51,25 +95,38 @@ h1{
   font-family: "Noto Serif", serif ;
   font-style: normal;
   font-size: 3em;
+  text-align: center;
 }
 
 p {
   font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .topnav {
   background-color: rgba(54, 175, 17, 0.875);
   overflow: hidden;
+  align-items: center;
+  text-align: center;
 }
 .topnav a {
-  float: right;
   color: #333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5em;
 }
 .topnav a:hover{
   background-color: #04bc60;
   color: antiquewhite;
+}
+
+/*footer*/
+footer{
+  text-align: center;
+  padding: 1rem;
+  background-color: #04ab04;
+  font-size: 0.9rem;
+  color: darkgreen;
 }
