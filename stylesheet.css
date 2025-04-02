@@ -81,11 +81,38 @@ button:hover{
 .favBtn:hover{
   background-color: rgb(237, 151, 165);
 }
+#favLijst{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#favLijst li {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  background-color: #61e357;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+#favLijst li:hover{
+  background-color: aquamarine;
+}
 section{
   background-color: #61e357;
   padding: 1rem;
   border-radius: 10px;
   min-height: 100px;
+}
+#instruction {
+  text-align: center;
+  font-style: italic;
+  color: #335;
+  margin-bottom: 1rem;
+}
+h4{
+  text-align: center;
 }
 
 h1{
