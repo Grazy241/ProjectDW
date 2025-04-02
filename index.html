@@ -7,24 +7,31 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <H1>The Y/N Map  –  An Unseen POV</H1>
+  <H1>The Y/N Explorer  –  An Unseen POV</H1>
   <div class="topnav">
     <a href="#home">Home</a>
     <a href="#munchies">Eat & Drinks</a>
-    <a href="#visit">Seasonal visits</a>
-    <a href="kunst">Hightivities</a>
+    <a href="#kunst">Hightivities</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-    <a href="verblijf">Daggamos</a>
-    <a href="facts">Fun facts</a>
-    <a href="maps">Maps</a>
+    <a href="#maps">Maps</a>
   </div>
+
   <div id="Home">
-    <H2>The Ultimate Y/N Travel Guide</H2>
-    <h4>Brussels</h4>
-    <h4>Bruxelles</h4>
+    <H2>De Ultieme Y/N Toerisme Gids</H2>
     <h4>Brussel</h4>
+    <div id="filters">
+      <input type="text" id="searchInput" placeholder="Vind plaatsen terug...">
+      <button id="themaswitch">🌙</button>
+    </div>
   </div>
+
+  <section id="favorieten">
+    <h3>Favorieten</h3>
+    <button id="sortBtn">Sorteer lijst</button>
+    <ul id="favLijst"></ul>
+  </section>
+
   <div id="">
     <h3>Welkom in Brussel – Een stad die bruist</h3>
     <p id="mijnstad">
@@ -35,42 +42,114 @@
       Soms vervloek ik haar – de eindeloze werken, de onagename geurtjes in de steegjes – maar dan vang ik een glimp van de zon met mijn stoute sigaret in de hand en weet ik..Brussel zit in mijn bloed.
     </p>
   </div>
-    <br>
-  <div id="verblijf">
-    <h2>
-      Where To Stay => lijst van airBnB's en hotries etc(maybe api??)
-    </h2>
-  </div>
-    <br>
+  <br>
+  <!--
   <div id="maps">
+    <img src="../ProjectDW/images/1steDateZ.jpg" alt="grondpainting bij reuzerad">
+    <img src="../ProjectDW/images/Bedav.jpg" alt="twee handen die een petch delen">
+    <img src="../ProjectDW/images/bxMaBelle.jpg" alt="kleine streetart textje">
     <p>
-      ADD Photos/Maps op een rij en elke photo is aanklikbaar om naar een andere sectie te gaan + heeft een thema => dus niet zomaar maps en photos.
+      ADD Maps achter de photos zodat elke Maak de photos aanklikbaar zodat elke photo verwijst naar een map waarop lijst met besproken zaken terug te vinden is  (heeft een thema => dus niet zomaar maps en photos.)
     </p>
   </div>
-  <br>
-  <div id="facts">
-    <h3>
-      Fun Facts About Brussels You Definitley Don't Know...
-    </h3>
-  </div>
-  <br>
+  <br> 
+  -->
   <div id="visit">
     <h3>
-      best time for visits
+      Best Time For Visits
     </h3>
+    <p>
+        Brussel is het hele jaar door charmant, maar de beste tijd om de stad te ontdekken is in de lente en de vroege herfst. 
+        <br>
+        <br>
+        In april en mei komt de stad tot leven met bloeiende parken en terrasjes vol locals die genieten van de eerste zon.
+
+        <br>
+        <br>
+        September en oktober brengen een gezellige sfeer met minder toeristen en kleurrijke herfstlandschappen in de Warande of het Ter Kamerenbos.
+
+        <br>
+        <br>
+        Wil je een magische ervaring? December betovert Brussel met winterse charme en de sfeervolle kerstmarkt. Maar eerlijk? Brussel verrast altijd, ongeacht het seizoen.
+    </p>
   </div>
   <br>
   <div id="munchies">
     <h3>
-      things to do 
+      Munchies 
     </h3>
+    <p>
+      Brussel is een paradijs voor fijnproevers! Of je nu zin hebt in een heerlijke wafel, topkwaliteit chocolade, Belgisch bier of een stevige kebab, hier zijn de beste adressen die je niet mag missen.
+<br><br>
+      <strong>🍽 Wafels proeven</strong>
+      <br><br>
+      <strong>Maison Dandoy</strong> – De absolute klassieker, met krokante Brusselse wafels en smeuïge Luikse wafels.
+      <br>
+      <strong>Le Funambule</strong> – Toeristisch, maar hun met Nutella overladen wafels blijven een guilty pleasure.
+      <br><br>
+      <strong>🍫 Chocolade van topkwaliteit </strong>
+      <br><br>
+      <strong>Pierre Marcolini</strong> – Luxe chocolade met intense smaken.
+      <br>
+      <strong>Neuhaus</strong> – De uitvinder van de praline en nog steeds een topper.
+      <br>
+      <strong>Leonidas</strong> – Betaalbare Belgische chocolade die wereldwijd bekend is.
+      <br><br>
+      <strong>🍻 Belgisch bier drinken</strong>
+      <br><br>
+      <strong>Delirium Café</strong> – Meer dan 2.000 soorten bier, van trappisten tot exclusieve brouwsels.
+      <br>
+      <strong>Moeder Lambic</strong> – Dé plek voor craft beer en lambiekbieren.
+      <br>
+      <strong>Poechenellekelder</strong> – Knusse sfeer, top bierselectie en zicht op Manneken Pis.
+      <br><br>
+      <strong>🌯 Beste kebabzaken in Brussel</strong>
+      <br><br>
+      <strong>Snack Istanbul</strong> – Legendarische kebab in de Matongé-wijk.
+      <br>
+      <strong>Le Mechoui</strong> – Perfect gegrild vlees, geliefd door locals.
+      <br>
+      <strong>Maison Antoine</strong> – Geen kebab, maar wél de beste Belgische frieten (perfect te combineren met een kebab!).
+    </p>
+    <input type="text" id="searchInput" placeholder="hoe geraak ik er?...">
   </div>
   <br>
   <div id="kunst">
     <h3>
-      places you HAVE to visit
+      Hightivities
     </h3>
+    <p>
+      Brussel is een stad van contrasten: rust in de parken, creativiteit op de muren en grandeur in de opera. Hier zijn de plekken die je niet mag missen.
+<br>
+<br>
+     <strong>🌳 De mooiste parken</strong>
+<br><br>
+     <strong>Mont des arts</strong> – de meest iconische plekken in Brussel, waar cultuur, geschiedenis en stoners rond een prachtig uitzicht samenkomen. Omringd door culturele instellingen en een fantastisch terras genaamd Plein Publiek...
+<br>
+     <strong>Ter Kamerenbos</strong> – Uitgestrekt park, ideaal voor picknicks, joggers en zonsondergangen met een stout sigaretje eventueel.
+<br>
+     <strong>Jubelpark</strong> – Historisch park met indrukwekkende triomfboog en musea. Waar ook veel studenten graag hun tijd doorbrengen bij de mooiere temperaturen.
+     <br><br>
+     <input type="text" id="searchInput" placeholder="hoe geraak ik er?...">
+<br><br>
+     <strong>🎨 Street Art & muurschilderingen</strong>
+<br><br>
+     <strong>Striproute</strong> – Muurschilderingen van Kuifje, Lucky Luke en andere Belgische striphelden verspreid over de stad.
+<br>
+     <strong>Het Poelaertplein</strong> – voor het imposante Justitiepaleis, biedt een van de mooiste uitzichten over Brussel. Van hieruit zie je de daken van de Marollen en bij helder weer zelfs de Atomium in de verte. Het plein is een populaire plek om even te pauzeren, skaters te spotten of de panoramische lift naar de Marollen te nemen. Een perfecte mix van grandeur en stadsleven!
+<br>
+     <strong>Parvis de Saint-Gilles</strong> – Hippe buurt vol kleurrijke murals en urban art. 
+<br><br>
+     <strong>🎭 De magie van opera</strong>
+<br><br>
+     <strong>De Munt (La Monnaie)</strong> – Brussel’s iconische operagebouw, waar je klassieke én moderne producties kan beleven in een adembenemend decor.
+<br>
+     Brussel leeft, ademt kunst en biedt rust tegelijk. Ontdek het op jouw tempo! 🎭🎨🌳
+      
+    </p>
+    <input type="text" id="searchInput" placeholder="hoe geraak ik er?...">
   </div>
+  <br>
   <hr>
   <footer> by Grazy </footer>
 </body>

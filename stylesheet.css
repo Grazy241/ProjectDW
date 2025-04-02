@@ -1,4 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  background-image: url(../ProjectDW/images/bxMaBelle.jpg);
+  background-color: #04bc60;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#filters {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+button{
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #04ab04;
+  color: white;
+  transition: background-color 0.2s;
+}
+button:hover{
+  background-color: rgb(98, 197, 151);
+}
+section{
+  background-color: #61e357;
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 100px;
+}
 
 h1{
   font-family: "Noto Serif", serif ;
