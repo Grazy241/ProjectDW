@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 /*Achtergrond Bovenkant pagina*/
-
 #topTitle{
   background-image: url(../ProjectDW/images/bxMaBelle.jpg);
   background-size: cover;
 }
-
 /*header*/
 #filters {
   margin-top: 1rem;
@@ -19,7 +17,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 h2{
   text-align: center;
   color: rgb(5, 76, 5);
@@ -46,7 +43,8 @@ body{
   flex-direction: column;
 }
 body.dark{
-  background-color: #335;
+  background-color: rgb(72, 72, 75);
+  color: rgb(16, 15, 15);
 }
 
 input {
@@ -55,6 +53,8 @@ input {
   border-radius: 6px;
   min-width: 150px;
   flex-shrink: 0;
+  align-items: center;
+  text-align: center;
 }
 
 button{
@@ -92,13 +92,17 @@ button:hover{
   font-size: 0.9rem;
   border-radius: 5px;
   background-color: #61e357;
-  color: white;
+  color: rgb(16, 15, 15);
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 #favLijst li:hover{
   background-color: aquamarine;
+}
+#favLijst-container{
+  background-color: aquamarine;
+  border-color: #04ab04;
 }
 section{
   background-color: #61e357;
@@ -113,6 +117,10 @@ section{
   margin-bottom: 1rem;
 }
 h4{
+  text-align: center;
+  font-size: 2em;
+}
+h5{
   text-align: center;
   font-size: 2em;
 }
@@ -146,6 +154,15 @@ p {
 .topnav a:hover{
   background-color: #04bc60;
   color: antiquewhite;
+}
+
+ul{
+  background-color: aquamarine;
+  border-color: #04ab04;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*footer*/
