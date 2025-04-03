@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 /*Achtergrond Bovenkant pagina*/
-/*
+
 #topTitle{
   background-image: url(../ProjectDW/images/bxMaBelle.jpg);
+
   background-repeat: no-repeat;
+  background-size: cover;
 }
-*/
+
 /*header*/
 #filters {
   margin-top: 1rem;
@@ -19,6 +21,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 h2{
   text-align: center;
   color: rgb(5, 76, 5);
